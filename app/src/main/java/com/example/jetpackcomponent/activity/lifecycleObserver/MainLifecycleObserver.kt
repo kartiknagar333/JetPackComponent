@@ -1,33 +1,35 @@
 package com.example.jetpackcomponent.activity.lifecycleObserver
 
+import android.util.Log
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 
 class MainLifecycleObserver : DefaultLifecycleObserver{
+    private val TAG = "Lifecycle"
 
     override fun onCreate(owner: LifecycleOwner) {
         super.onCreate(owner)
-        println("ON_CREATE - 3")
+        Log.d(TAG, "ON_CREATE: 3")
     }
 
     override fun onStart(owner: LifecycleOwner) {
-        println("ON_START - 3")
+        Log.d(TAG, "ON_START: 3")
         super.onStart(owner)
     }
 
     override fun onResume(owner: LifecycleOwner) {
-        println("ON_RESUME")
+        Log.d(TAG, "ON_RESUME")
     }
 
     override fun onPause(owner: LifecycleOwner) {
-        println("ON_PAUSE")
+        Log.d(TAG, "ON_PAUSE")
     }
 
     override fun onStop(owner: LifecycleOwner) {
-        println("ON_STOP")
+        Log.d(TAG, "ON_STOP")
     }
 
     override fun onDestroy(owner: LifecycleOwner) {
-        println("ON_DESTROY")
+        Log.d(TAG, "ON_DESTROY")
     }
 }
