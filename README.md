@@ -1,4 +1,5 @@
-# LifecycleObserver Comparison: LifecycleEventObserver vs DefaultLifecycleObserver
+# JetPack Component
+<details> <summary><b> 1. LifecycleObserver Comparison: LifecycleEventObserver vs DefaultLifecycleObserver</b></summary>
 
 ## Overview
 Both `LifecycleEventObserver` and `DefaultLifecycleObserver` are interfaces in Android's Lifecycle-aware components that allow observing lifecycle events of components like Activities and Fragments. They serve similar purposes but with different implementation approaches.
